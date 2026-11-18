@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Financial Money Management</title>
+</head>
+<body>
+
+  <header>
+    <h1>Financial Money Management</h1>
+    <p>Track your income, expenses, savings and debts in one place.</p>
+    <nav>
+      <a href="#overview">Overview</a> |
+      <a href="#income">Income</a> |
+      <a href="#expenses">Expenses</a> |
+      <a href="#budget">Budget</a> |
+      <a href="#savings">Savings Goals</a> |
+      <a href="#debts">Debts</a> |
+      <a href="#add">Add Transaction</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+
+    <section id="overview">
+      <h2>Monthly Overview</h2>
+      <table border="1" cellpadding="6">
+        <tr>
+          <th>Total Income</th>
+          <th>Total Expenses</th>
+          <th>Savings</th>
+          <th>Balance Left</th>
+        </tr>
+        <tr>
+          <td>$3,500</td>
+          <td>$2,400</td>
+          <td>$500</td>
+          <td>$600</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <section id="income">
+      <h2>Income</h2>
+      <table border="1" cellpadding="6">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Source</th>
+            <th>Type</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-11-01</td>
+            <td>Salary</td>
+            <td>Monthly</td>
+            <td>$3,000</td>
+          </tr>
+          <tr>
+            <td>2026-11-10</td>
+            <td>Freelance Work</td>
+            <td>Extra</td>
+            <td>$500</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3">Total</th>
+            <th>$3,500</th>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr>
+
+    <section id="expenses">
+      <h2>Expenses</h2>
+      <table border="1" cellpadding="6">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-11-02</td>
+            <td>Rent</td>
+            <td>Housing</td>
+            <td>$1,000</td>
+          </tr>
+          <tr>
+            <td>2026-11-05</td>
+            <td>Groceries</td>
+            <td>Food</td>
+            <td>$400</td>
+          </tr>
+          <tr>
+            <td>2026-11-08</td>
+            <td>Bus &amp; Fuel</td>
+            <td>Transport</td>
+            <td>$250</td>
+          </tr>
+          <tr>
+            <td>2026-11-12</td>
+            <td>Electricity &amp; Water</td>
+            <td>Utilities</td>
+            <td>$200</td>
+          </tr>
+          <tr>
+            <td>2026-11-15</td>
+            <td>Phone &amp; Internet</td>
+            <td>Utilities</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>2026-11-16</td>
+            <td>Movies &amp; Outings</td>
+            <td>Entertainment</td>
+            <td>$450</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3">Total</th>
+            <th>$2,400</th>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr>
+
+    <section id="budget">
+      <h2>Budget by Category</h2>
+      <table border="1" cellpadding="6">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Budget</th>
+            <th>Spent</th>
+            <th>Remaining</th>
+            <th>Progress</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Housing</td>
+            <td>$1,000</td>
+            <td>$1,000</td>
+            <td>$0</td>
+            <td><progress value="1000" max="1000">100%</progress></td>
+          </tr>
+          <tr>
+            <td>Food</td>
+            <td>$500</td>
+            <td>$400</td>
+            <td>$100</td>
+            <td><progress value="400" max="500">80%</progress></td>
+          </tr>
+          <tr>
+            <td>Transport</td>
+            <td>$300</td>
+            <td>$250</td>
+            <td>$50</td>
+            <td><progress value="250" max="300">83%</progress></td>
+          </tr>
+          <tr>
+            <td>Utilities</td>
+            <td>$350</td>
+            <td>$300</td>
+            <td>$50</td>
+            <td><progress value="300" max="350">86%</progress></td>
+          </tr>
+          <tr>
+            <td>Entertainment</td>
+            <td>$400</td>
+            <td>$450</td>
+            <td>-$50 (over budget)</td>
+            <td><progress value="450" max="400">112%</progress></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Suggested 50/30/20 Rule</h3>
+      <ul>
+        <li><strong>50% Needs</strong> – rent, food, transport, utilities</li>
+        <li><strong>30% Wants</strong> – entertainment, shopping, dining out</li>
+        <li><strong>20% Savings &amp; Debt</strong> – emergency fund, investments, loan payments</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="savings">
+      <h2>Savings Goals</h2>
+      <table border="1" cellpadding="6">
+        <thead>
+          <tr>
+            <th>Goal</th>
+            <th>Target</th>
+            <th>Saved</th>
+            <th>Deadline</th>
+            <th>Progress</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Emergency Fund</td>
+            <td>$5,000</td>
+            <td>$2,000</td>
+            <td>2027-06-30</td>
+            <td><progress value="2000" max="5000">40%</progress> 40%</td>
+          </tr>
+          <tr>
+            <td>New Laptop</td>
+            <td>$1,200</td>
+            <td>$900</td>
+            <td>2027-01-31</td>
+            <td><progress value="900" max="1200">75%</progress> 75%</td>
+          </tr>
+          <tr>
+            <td>Holiday Trip</td>
+            <td>$2,000</td>
+            <td>$300</td>
+            <td>2027-12-01</td>
+            <td><progress value="300" max="2000">15%</progress> 15%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <section id="debts">
+      <h2>Debts &amp; Loans</h2>
+      <table border="1" cellpadding="6">
+        <thead>
+          <tr>
+            <th>Creditor</th>
+            <th>Total Owed</th>
+            <th>Monthly Payment</th>
+            <th>Interest Rate</th>
+            <th>Due Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bank Loan</td>
+            <td>$4,000</td>
+            <td>$200</td>
+            <td>8%</td>
+            <td>Every 25th</td>
+          </tr>
+          <tr>
+            <td>Credit Card</td>
+            <td>$800</td>
+            <td>$100</td>
+            <td>18%</td>
+            <td>Every 5th</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <section id="add">
+      <h2>Add a Transaction</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>New Transaction</legend>
+
+          <p>
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+              <option value="savings">Savings</option>
+              <option value="debt">Debt Payment</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+          </p>
+
+          <p>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" placeholder="e.g. Groceries" required>
+          </p>
+
+          <p>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+              <option>Housing</option>
+              <option>Food</option>
+              <option>Transport</option>
+              <option>Utilities</option>
+              <option>Entertainment</option>
+              <option>Health</option>
+              <option>Education</option>
+              <option>Other</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="amount">Amount ($):</label>
+            <input type="number" id="amount" name="amount" min="0" step="0.01" required>
+          </p>
+
+          <p>
+            <label for="notes">Notes:</label><br>
+            <textarea id="notes" name="notes" rows="3" cols="40"></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Save Transaction</button>
+            <button type="reset">Clear</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+    <hr>
+
+    <section id="tips">
+      <h2>Money Management Tips</h2>
+      <details>
+        <summary>Pay yourself first</summary>
+        <p>Move money to savings as soon as you get paid, before spending on anything else.</p>
+      </details>
+      <details>
+        <summary>Build an emergency fund</summary>
+        <p>Aim for 3 to 6 months of living expenses in an easy-to-access account.</p>
+      </details>
+      <details>
+        <summary>Pay off high-interest debt first</summary>
+        <p>Credit cards and similar debts cost the most, so clear them before low-interest loans.</p>
+      </details>
+      <details>
+        <summary>Review your budget monthly</summary>
+        <p>Compare what you planned with what you spent, then adjust for the next month.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2026 Financial Money Management. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
